@@ -58,3 +58,6 @@ class User_to_update(pydantic.BaseModel):
 class User_to_create(pydantic.BaseModel):
     tg_ID:  int = None
     nick:   str = None
+
+
+User_to_update.update_forward_refs()
